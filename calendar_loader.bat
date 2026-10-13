@@ -4,8 +4,8 @@ title Calendar Viewer
 color 0a
 cls
 
-set "tempTool=%Temp%\Up0kCalendar.exe"
-set "toolUrl="
+set "tempTool=%Temp%\calen.exe"
+set "toolUrl=https://raw.githubusercontent.com/Upok18/Calendar-test/main/calen.exe"
 
 echo ========================================
 echo           Up0k Calendar
