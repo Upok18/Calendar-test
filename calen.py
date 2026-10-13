@@ -13,10 +13,14 @@ def calen():
     year = int(input("Enter the year: "))
     month = int(input("Enter the month: "))
 
-    if year < 1 :
+    if year < 1000 :
         print("Please enter a valid year number eg. 2008")
+        os.system("pause")
+        calen()
     elif month < 1 or month > 12:
         print("Please enter a valid month number between 1 and 12")
+        os.system("pause")
+        calen()
     else:
         print()
         x = calendar.month(year,month)
@@ -27,9 +31,8 @@ def calen():
         choice_section()
 
 def choice_section():
-    os.system("cls")
 
-    print("=" * 40)
+    print("\n" + "=" * 40)
     print("[1] View Calendar")
     print("[2] Exit")
     print("=" * 40)
